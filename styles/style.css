@@ -168,6 +168,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 99;
 }
 .show-menu .sidebar{
     right: 0;
@@ -366,4 +367,103 @@ header{
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
+}
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contato-wrapper{
+    width: 60%;
+    display: flex;
+    height: 40rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+}
+.contato-left{
+    width: 35%;
+    background:
+        linear-gradient(rgba(15,15,15, 0.6),
+        rgba(22,22,22, 0.9)),
+        url(/imagens/contato.jpg);
+    background-size: cover;
+}
+.contato-right{
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+.sessao-contato h1{
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.sessao-contato form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.input-group{
+    position: relative;
+}
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+}
+.input-group textarea{
+    padding-top: 1rem;
+    max-width: 30rem;
+    max-height: 10rem;
+}
+.field-label{
+    position: absolute;
+    left: 0;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    top: 0;
+    font-size: 1.2rem;
+    transition: all .3s;
+}
+.field:focus ~ label{
+    top: .7rem;
+    font-size: 1rem;
+}
+.field:focus{
+        border-bottom: 1px solid;
+}
+.btn-submit{
+    text-transform: uppercase;
+    width: 20rem;
+    height: 2.5rem;
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to right, #a044ff, #6a3093);
+    font-family: var(--font-action);
+    font-size: .9rem;
+    color: #eee;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.btn-submit:hover{
+    opacity: 0.8!important;
+    color: black;
+    text-decoration: underline;
 }
