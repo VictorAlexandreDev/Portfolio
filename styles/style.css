@@ -357,6 +357,11 @@ header{
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
+.card-info button:hover{
+    opacity: 0.8!important;
+    color: black;
+    text-decoration: underline;
+}
 .card:hover .card-info{
     bottom: 2rem;
     opacity: 1;
