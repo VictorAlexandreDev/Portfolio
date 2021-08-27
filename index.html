@@ -152,7 +152,7 @@
                         <h2>ToDo list</h2>
                         <h3>JavaScript</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit fuga, perferendis eum esse quasi impedit quaerat magnam mollitia nihil vitae.</p>
-                        <button>Saiba Mais!</button>
+                        <button class="btn">Saiba Mais!</button>
                     </div><!--card-info-->
                 </div><!--card-->
 
@@ -164,7 +164,7 @@
                         <h2>Maratona</h2>
                         <h3>HTML, CSS</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cumque impedit placeat voluptates minima veniam explicabo molestias perspiciatis pariatur architecto.</p>
-                        <button>Saiba Mais!</button>
+                        <button class="btn">Saiba Mais!</button>
                     </div><!--card-info-->
                 </div><!--card-->
 
@@ -176,7 +176,7 @@
                         <h2>Casa Bela</h2>
                         <h3>HTML</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quia suscipit fugiat inventore alias! Ducimus aliquam dignissimos nesciunt rerum libero!</p>
-                        <button>Saiba Mais!</button>
+                        <button class="btn">Saiba Mais!</button>
                     </div><!--card-info-->
                 </div><!--card-->
 
@@ -194,13 +194,37 @@
                         <div class="input-group"><input id="nome" type="text" class="field"><label for="nome" class="field-label">Nome</label></div><!--input-group-->
                         <div class="input-group"><input id="email" type="text" class="field"><label for="email" class="field-label">E-mail</label></div><!--input-group-->
                         <div class="input-group"><textarea id="mensagem" class="field"></textarea><label for="mensagem" class="field-label">Mensagem</label></div><!--input-group-->
-                        <button type="submit" class="btn-submit">Enviar</button>
+                        <button type="submit btn-submit" class="btn btn-submit">Enviar</button>
                     </form>
                 </div><!--contato-right-->
             </div><!--contato-wrapper-->
         </section><!--sessao contato-->
 
-        <section class="sessao-orcamento"></section><!--sessao-orcamento-->
+        <section class="sessao-orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="qtde">Quantidade de páginas</label>
+                    <input type="number" min="1" id="qtde">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-sim">Já tenho um layout</label>
+                        </div>
+                    </div><!--group layout -->
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button type="submit" class="btn btn-orcamento">Enviar</button>
+                </form>
+            </div><!--orcamento-wrapper-->
+        </section><!--sessao-orcamento-->
     </div><!--container-->
 </body>
 <script src="JS/script.js"></script>

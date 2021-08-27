@@ -344,7 +344,7 @@ header{
     font-weight: 400;
     margin-bottom: 2rem;
 }
-.card-info button{
+.btn{
     width: 8rem;
     height: 2.5rem;
     background: #6a3093;
@@ -446,24 +446,70 @@ header{
 .field:focus{
         border-bottom: 1px solid;
 }
-.btn-submit{
-    text-transform: uppercase;
-    width: 20rem;
-    height: 2.5rem;
-    background: #6a3093;
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-    background: linear-gradient(to right, #a044ff, #6a3093);
-    font-family: var(--font-action);
-    font-size: .9rem;
-    color: #eee;
-    border-radius: .5rem;
-    border: none;
-    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    margin-top: 2rem;
-}
-.btn-submit:hover{
+.btn:hover{
     opacity: 0.8!important;
     color: black;
     text-decoration: underline;
+}
+.btn-submit{
+    width: 20rem;
+}
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url("/imagens/bg-orcamento.jpg");
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orcamento-wrapper{
+    width: 50%;
+    height: 70%;
+    background: #ffffff99;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to right, #a044ff, #6a3093);
+    padding: 0.5rem 3rem;
+    color: #fff;
+    border-radius: 10px;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.4);
+}
+.sessao-orcamento form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.sessao-orcamento label{
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.sessao-orcamento input[type="number"]{
+    font-family: var(--font-secundary);
+    width: 5rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.3rem;
+}
+.btn-orcamento{
+    text-transform: uppercase;
+    cursor: pointer;
+    grid-column: 2;
+    width: 15rem;
 }
